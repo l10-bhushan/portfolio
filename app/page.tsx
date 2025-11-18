@@ -1,22 +1,24 @@
-import VerticalHeader from "./components/VerticalHeader/VerticalHeader";
-import MainSection from "./components/MainSection/MainSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import About from "./components/About/About";
 import FadeContent from "@/components/FadeContent";
+import HeroSection from "./components/HeroSection/HeroSection";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="flex max-w-5xl px-5 m-auto flex-col">
+    <div className="flex max-w-4xl px-5 m-auto my-10 flex-col">
       <FadeContent
         blur={true}
         duration={1000}
         easing="ease-out"
         initialOpacity={0}
       >
-        <VerticalHeader />
-        <MainSection />
+        <HeroSection />
         <WorkExperience />
         <About />
+        <Contact />
+        <Footer />
       </FadeContent>
     </div>
   );
