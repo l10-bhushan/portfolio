@@ -1,0 +1,38 @@
+.cloud {
+    animation: move 6s ease infinite;
+    --cloud-scale: 1.8; /* set 1.5 or 2 */
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,0), hsla(0,0%,0%,.1));
+    border-radius: 1em;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,100%,.5);
+    display: inline-block;
+    height: calc(1em * var(--cloud-scale));
+    margin-left: calc(-1.5em * var(--cloud-scale));
+    width: calc(3em * var(--cloud-scale));
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud:after,
+.cloud:before {
+    background-color: #fff;
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+}
+.cloud:after {
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.025));
+    height: calc(1em * var(--cloud-scale));
+    right: calc(.4em * var(--cloud-scale));
+    top: calc(-.5em * var(--cloud-scale));
+    width: calc(1em * var(--cloud-scale));
+}
+.cloud:before {
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,0) 50%, hsla(0,0%,0%,.075));
+    height: calc(1.6em * var(--cloud-scale));
+    left: calc(.4em * var(--cloud-scale));
+    top: calc(-.75em * var(--cloud-scale));
+    width: calc(1.6em * var(--cloud-scale));
+}
+
+@keyframes move{
+  50% { transform: translateY(-15px); }
+}
