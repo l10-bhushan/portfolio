@@ -9,7 +9,7 @@ import TechStack from "../TechStack/TechStack";
 export default function WorkExperience() {
   return (
     <div className="flex flex-col px-10 py-10 gap-2">
-      <p className="text-2xl pb-10">Professional History</p>
+      <p className="hero-section text-3xl pb-10">Professional History</p>
       <p className="text-lg">Product Engineer - Lead I, UST Global - Pune</p>
       <Accordion
         type="single"
@@ -25,7 +25,37 @@ export default function WorkExperience() {
             </div>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
-            <TechStack />
+            <TechStack
+              data={{
+                onlyIcons: true,
+                tech: [
+                  {
+                    name: "HTML",
+                    icon: "/html.svg",
+                  },
+                  {
+                    name: "CSS",
+                    icon: "/css.svg",
+                  },
+                  {
+                    name: "Next.js",
+                    icon: "/nextjs.svg",
+                  },
+                  {
+                    name: "React.js",
+                    icon: "/reactjs.svg",
+                  },
+                  {
+                    name: "Typescript",
+                    icon: "/typescript.svg",
+                  },
+                  {
+                    name: "Postgres",
+                    icon: "/postgres.svg",
+                  },
+                ],
+              }}
+            />
             <p>
               - Microfrontend setup for a new module in a web project using
               Webpack, making it easier to scale and update independently.
@@ -66,7 +96,33 @@ export default function WorkExperience() {
             </div>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
-            <TechStack />
+            <TechStack
+              data={{
+                onlyIcons: true,
+                tech: [
+                  {
+                    name: "HTML",
+                    icon: "/html.svg",
+                  },
+                  {
+                    name: "CSS",
+                    icon: "/css.svg",
+                  },
+                  {
+                    name: "Next.js",
+                    icon: "/nextjs.svg",
+                  },
+                  {
+                    name: "React.js",
+                    icon: "/reactjs.svg",
+                  },
+                  {
+                    name: "Typescript",
+                    icon: "/typescript.svg",
+                  },
+                ],
+              }}
+            />
             <p>
               - Worked as a consultant for UST Global on the Revin Core project,
               contributing to frontend development using React.js. Collaborated
@@ -89,12 +145,38 @@ export default function WorkExperience() {
         <AccordionItem value="item-1">
           <AccordionTrigger className="text-md">
             <div className="w-full flex justify-between">
-            <p>VMI</p>
-            <p>Feb 2020 - Jan 2021</p>
+              <p>VMI</p>
+              <p>Feb 2020 - Jan 2021</p>
             </div>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
-            <TechStack />
+            <TechStack
+              data={{
+                onlyIcons: true,
+                tech: [
+                  {
+                    name: "HTML",
+                    icon: "/html.svg",
+                  },
+                  {
+                    name: "CSS",
+                    icon: "/css.svg",
+                  },
+                  {
+                    name: "React.js",
+                    icon: "/reactjs.svg",
+                  },
+                  {
+                    name: "Typescript",
+                    icon: "/typescript.svg",
+                  },
+                  {
+                    name: "Postgres",
+                    icon: "/postgres.svg",
+                  },
+                ],
+              }}
+            />
             <p>
               - Project focused on a card based structure, where people can add
               small notes.

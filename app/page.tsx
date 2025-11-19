@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="flex max-w-4xl px-5 m-auto my-10 flex-col">
+    <div className="flex max-w-4xl px-5 m-auto my-10 flex-col border-2 border-amber-300">
       <FadeContent
         blur={true}
         duration={1000}

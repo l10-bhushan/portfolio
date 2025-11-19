@@ -10,8 +10,8 @@ export default function Contact() {
     })();
   }, []);
   return (
-    <div className="py-10">
-      <p className="text-2xl">Contact</p>
+    <div className="py-10 px-10">
+      <p className="text-3xl hero-section">Contact</p>
       <p className="text-lg py-5">
         Hey, so you are interested to work with me. Let's connect over a call.
       </p>

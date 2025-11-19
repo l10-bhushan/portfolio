@@ -58,7 +58,7 @@ export default function SocialMediaSection(props: { footer: boolean }) {
         </svg>
       </a>
       {!footer && (
-        <Pill className="w-auto px-3 h-fit py-1 bg-gray-900 rounded-md ">
+        <Pill className="badges w-auto px-3 h-fit py-1 rounded-md ">
           <PillIndicator pulse variant="success" />
             <p className="text-[13px]">Available</p>
         </Pill>

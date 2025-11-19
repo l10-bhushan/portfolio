@@ -3,14 +3,15 @@ import SocialMediaSection from "../SocialMediaSection/SocialMediaSection";
 import MainAvatarWithFloatingTiles from "../MainAvatarWithFloatingTiles/MainAvatarWithFloatingTiles";
 import TechStack from "../TechStack/TechStack";
 import GetInTouch from "../GetInTouch/GetInTouch";
+import { TECHSTACK } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col py-10 px-10 gap-2">
+    <div className="flex flex-col py-10 px-10 gap-3">
       <MainAvatarWithFloatingTiles />
       <WritingText
         text="Hi, I'm Bhushan"
-        className="text-4xl"
+        className="hero-section text-5xl font-bold"
         inView={true}
         transition={{
           type: "spring",
@@ -21,7 +22,7 @@ export default function HeroSection() {
       />
       <WritingText
         text="Senior Frontend developer | Entrepreneur"
-        className="text-gray-300 text-2xl"
+        className="hero-section-subheader text-2xl"
         inView={true}
         transition={{
           type: "spring",
@@ -32,7 +33,7 @@ export default function HeroSection() {
       />
       <WritingText
         text="I love building websites and exploring new horizons in tech..."
-        className="text-gray-300 text-lg"
+        className="hero-section-subheader text-lg"
         inView={true}
         transition={{
           type: "spring",
@@ -42,10 +43,12 @@ export default function HeroSection() {
         }}
       />
       <SocialMediaSection footer={false} />
-      <TechStack />
+      <TechStack
+              data={{onlyIcons : false , tech : TECHSTACK  }}
+             />
       <section className="flex gap-5 py-2 items-center">
         {/* Todo: Need to fix, this isn't responsive */}
-        <a href="/Resume.pdf" className="flex text-md gap-3 justify-evenly w-fit py-1 px-3 items-center min-h-10 border-1 border-gray-700 rounded-xl cursor-pointer">
+        <a href="/Resume.pdf" target="_blank" className="flex text-md gap-3 justify-evenly w-fit py-1 px-3 items-center min-h-10 border-1 border-gray-700 rounded-xl cursor-pointer">
           <p>Resume / CV</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
