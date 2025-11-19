@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: black;
-  --foreground: white;
+  --background: #FFFCF2;
+  --foreground: #252422;
 }
 
 @theme inline {
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     background-image: white;
-    --foreground: white;
+    --foreground: #252422 ;
   }
 }
 
@@ -27,4 +27,43 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+.badges {
+  background-color: #403D39;
+}
+
+.badges > p {
+  color : #FFFCF2;
+}
+
+.hero-section {
+  color:  #EB5E28;
+}
+
+.hero-section-subheader {
+  color: #403D39;
+}
+
+.wrapper {
+  background-color: #FFFCF2;
+  &:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #f7f7f4;
+		z-index: -1;
+		box-shadow: 0 0 20rem lighten(#000, 60%);
+		transition: box-shadow .2s ease-in-out;
+	}&.level-3 {
+		&:hover {
+			&:before {
+				box-shadow: 0 0 500rem lighten(#000, 60%);
+			}
+		}
+	}
+}
+
+p {
+  cursor: default;
 }
