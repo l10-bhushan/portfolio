@@ -44,3 +44,26 @@ body {
 .hero-section-subheader {
   color: #403D39;
 }
+
+.wrapper {
+  background-color: #FFFCF2;
+  &:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: #f7f7f4;
+		z-index: -1;
+		box-shadow: 0 0 20rem lighten(#000, 60%);
+		transition: box-shadow .2s ease-in-out;
+	}&.level-3 {
+		&:hover {
+			&:before {
+				box-shadow: 0 0 500rem lighten(#000, 60%);
+			}
+		}
+	}
+}
+
+p {
+  cursor: default;
+}
